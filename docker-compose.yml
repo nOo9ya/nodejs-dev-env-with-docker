@@ -44,13 +44,16 @@ services:
 
   node:
     container_name: node20
-    image: node:20-alpine
+    build:
+      context: .
+      dockerfile: .docker/node/Dockerfile
+      args:
+        - WORK_DIR=/var/www
     restart: unless-stopped
     volumes:
       - ./src:/var/www
     ports:
       - "3000:3000"
-    entrypoint: [ 'npm' ]
     networks:
       - app-network
 
