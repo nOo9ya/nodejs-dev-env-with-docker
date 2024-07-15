@@ -18,8 +18,6 @@ git push -u origin main
 
 git init --initial-branch=main
 git remote add origin https://github.com/nOo9ya/nodejs-dev-env-with-docker.git
-git add .
-git commit -am "first init"
 git pull origin main
 ```
 
