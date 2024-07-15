@@ -1,5 +1,5 @@
 # Nodejs development environment with docker
-docker(alpine) = php-fpm + mariadb + redis + node
+docker(alpine) = node + mariadb + redis
 
 # …or repository from the command line
 ```shell
